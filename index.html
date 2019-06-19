@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tic-Tac-Toe!</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="start-modal"  class="modal">
+            <div class="modal-content">
+                <h1>Welcome to Tic-Tac-Toe!</h1><h2>How would you like to play?</h2>
+                <button id='one-player' class='modal-button left-button control' onclick="one()">1 Player</button>
+                <button id='two-player' class='modal-button right-button control' onclick="two()">2 Players</button>
+            </div>
+        </div>
+        
+        <div id="computer-modal" class="modal">
+            <div class="modal-content">
+            <h1>You will be playing against a computer</h1><h2>Would you like to go first or second?</h2><button id='human-first' class="modal-button left-button control" onclick="first()">First</button>
+            <button id='computer-first' class = 'modal-button right-button control' onclick="second()">Second</button>
+            </div>
+        </div>
+        
+        <div id="board">
+            <button class="square" id="sq0" onclick="move(0, 0)">
+            </button>
+            <button class="square mid" id="sq1" onclick="move(1, 0)">
+                
+            </button>
+            <button class="square right" id="sq2" onclick="move(2, 0)"></button>
+            <button class="square left" id="sq3" onclick="move(3, 0)"></button>
+            <button class="square mid" id="sq4" onclick="move(4, 0)">
+            </button>
+            <button class="square right" id="sq5" onclick="move(5, 0)">
+            </button>
+            <button class="square left" id="sq6" onclick="move(6, 0)"></button>
+            <button class="square mid" id="sq7" onclick="move(7, 0)"></button>
+            <button class="square right" id="sq8" onclick="move(8, 0)"></button>
+            
+            
+        </div>
+        
+        <div id="game-over"><span id="ending"></span><button class="control" id="reset" onclick="reset_func()">Reset</button></div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
